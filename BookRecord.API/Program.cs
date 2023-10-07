@@ -2,6 +2,7 @@ using BookRecord.DAL.Models;
 using Microsoft.EntityFrameworkCore;
 using BookRecord.BLL.Repository;
 using BookRecord.BLL.Repository.Implements;
+using BookRecord.BLL.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,9 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 //Add Repository
 builder.Services.AddScoped<IAutorRepository, AutorRepository>();
 builder.Services.AddScoped<ILibroRepository, LibroRepository>();
+
+//Add Service
+builder.Services.AddScoped<ILibroService, LibroService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

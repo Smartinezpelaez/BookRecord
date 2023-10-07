@@ -12,7 +12,7 @@ public partial class Libro
 
     public int NumPaginas { get; set; }
 
-    public int? AutorId { get; set; }
+    public int AutorId { get; set; }
 
     public virtual Autor? Autor { get; set; }
 }
