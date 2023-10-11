@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using BookRecord.BLL.DTOs;
 using BookRecord.BLL.Repository;
-using BookRecord.BLL.Repository.Implements;
 using BookRecord.BLL.Services;
 using BookRecord.DAL.Models;
 using Microsoft.AspNetCore.Mvc;
